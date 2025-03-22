@@ -52,6 +52,12 @@
 			<artifactId>cucumber-java</artifactId>
 			<version>7.18.0</version>
 		</dependency>
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>1.18.28</version>
+			<scope>provided</scope>
+		</dependency>
 		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-core -->
 		<dependency>
 			<groupId>io.cucumber</groupId>
@@ -146,7 +152,8 @@
 				<configuration>
 					<!--<includes>Testngdemo1.java</includes>-->
 					<suiteXmlFiles>
-						<suiteXmlFile>C:\Users\Aakash\eclipse-workspace\DemoWebShop\CartTest.xml</suiteXmlFile>
+						<suiteXmlFile>
+							C:\Users\Aakash\eclipse-workspace\DemoWebShop\InvalidLogin.xml</suiteXmlFile>
 						<!--<suiteXmlFile>testng-suite.xml</suiteXmlFile>-->
 					</suiteXmlFiles>
 					<!--<includes>./cart/CartRunnerWrapper.class</includes>-->

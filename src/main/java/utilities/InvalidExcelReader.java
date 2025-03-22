@@ -11,7 +11,7 @@ public class InvalidExcelReader {
 
     @DataProvider(name = "InvalidCredentialsProvider")
     public static Object[][] readInvalidCredentials() {
-        String filePath = "C:\\Users\\karthik reddy\\eclipse-workspace\\Capstone_project_march\\src\\main\\java\\data\\invaid data.xlsx"; // file path
+        String filePath = "C:\\Users\\Aakash\\eclipse-workspace\\DemoWebShop\\Credentials.xlsx"; // file path
         Object[][] data = new Object[3][2]; // 3 data rows, 2 columns
 
         try {
