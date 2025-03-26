@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Runner.RegisterRunBdd">
+      <class name="tests.CartTest">
         <methods>
-          <include name="runScenario" invocation-numbers="0"/>
-          <include name="tearDownClass"/>
-          <include name="setUpClass"/>
+          <include name="setUp"/>
+          <include name="closeDownbrowser"/>
+          <include name="testingthecart"/>
         </methods>
-      </class> <!-- Runner.RegisterRunBdd -->
+      </class> <!-- tests.CartTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

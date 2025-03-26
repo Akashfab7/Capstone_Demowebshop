@@ -1,8 +1,12 @@
 package pages;
 
+import java.time.Duration;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
 import base.BaseTest;
 import utilities.ConfigReader;
-import org.openqa.selenium.By;
 
 // Extending the BaseTest class to inherit the WebDriver and other methods
 public class CartPage extends BaseTest {
@@ -22,7 +26,8 @@ public class CartPage extends BaseTest {
 
     // Defining locator for shopping cart link
     public By shoppingcart = By.linkText("Shopping cart");
-
+    //
+   
     // Method for logging in, adding a product to the cart, and navigating to the cart page
     public void ApparelandShoes() {
         

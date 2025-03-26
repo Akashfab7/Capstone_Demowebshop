@@ -6,7 +6,7 @@ import io.cucumber.testng.CucumberOptions;
 @CucumberOptions(
     features = "C:\\Users\\Aakash\\eclipse-workspace\\DemoWebShop\\src\\main\\java\\features\\Registration.feature", // Path to feature files
     glue = {"stepDef"}, // Package containing your Step Definitions
-    plugin = {"pretty", "html:target/cucumber-reports", }
+    plugin = {"pretty", "html:target/cucumber-reports","io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm" }
     // "pretty" generates readable output in the console
 
     
