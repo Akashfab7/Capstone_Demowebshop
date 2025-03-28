@@ -46,7 +46,7 @@ public class CartPage1 extends BaseTest {
     public By searchproduct=By.xpath("//input[@type='text']");
     
     public By shoes1 = By.linkText("Apparel & Shoes");
-    //public By cellphones = By.linkText("Cell phones");
+ 
     public By firstproducts = By.xpath("//div[@class='product-grid']//div[3]//div[1]//div[2]//div[3]//div[2]//input[1]");
     public By shoppingcarts =By.linkText("Shopping cart");
     public By quantity =By.xpath("(//input[@type='text'])[2]");
@@ -113,12 +113,10 @@ public class CartPage1 extends BaseTest {
 			  ReportManager.createTest("Add Apperal & shoes to Cart");
 			  driver.findElement(shoes).click();
 			  ReportManager.getTest().log(Status.INFO,"Navigated to Apperal & shoes  Category"); 
-			  //driver.findElement(cellphone).click();
-			  //ReportManager.getTest().log(Status.INFO, "Selected 'Cell Phones' Category");
+			  
 			  driver.findElement(firstproduct).click();
 			  ReportManager.getTest().pass(" First Product Added to Cart");
-			  //driver.findElement(secondproduct).click();
-			  //ReportManager.getTest().pass("Second Product Added to Cart");
+			  
 			  driver.findElement(shoppingcart).click();
 			  ReportManager.getTest().pass("Successfully Entered Shopping Cart");
 			    
@@ -130,9 +128,7 @@ public class CartPage1 extends BaseTest {
 		        driver.findElement(searchproduct).click();
 		        driver.findElement(searchproduct).sendKeys("blue jeans",Keys.ENTER);
 		        driver.findElement(shoes1).click();
-		        //driver.findElement(cellphones).click();
 		        driver.findElement(firstproducts).click();
-		        //driver.findElement(secondproducts).click();
 		        System.out.println("added to cart successful");
 		        driver.findElement(shoppingcarts).click();
 		        driver.findElement(quantity).click();
@@ -195,7 +191,6 @@ public class CartPage1 extends BaseTest {
 				  ReportManager.getTest().log(Status.INFO, "Clicked on Login link");
 				  driver.findElement(loginButton).click();
 				  ReportManager.getTest().pass(" Login Successful");
-				  //driver.findElement(logoutButton).click();
 				  ReportManager.getTest().pass(" Logout Successful");
 				 
             
